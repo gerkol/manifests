@@ -30,7 +30,7 @@ You may need to decrease setup-environment variable GPU_MEM to meet your specifi
 
 ```
 mkdir rpi_64_yocto && cd rpi_64_yocto
-repo init -u https://github.com/jwinarske/manifests.git -m rpi64.xml -b dunfell
+repo init -u https://github.com/gerkol/manifests.git -m rpi64.xml -b honister
 repo sync -j20
 source ./setup-environment $MACHINE
 echo -e 'CORE_IMAGE_EXTRA_INSTALL += " \' >> conf/local.conf
